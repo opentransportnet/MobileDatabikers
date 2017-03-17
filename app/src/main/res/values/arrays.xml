@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Report an issue START-->
+    <array name="road_condition">
+        <item>Damaged road, pothole, … Increased risk of falling</item>
+        <item>Bad drainage when raining, puddles on the cycle lane</item>
+        <item>Elevation difference too high, for instance</item>
+        <item>Overgrowth along cycle path makes it too narrow</item>
+        <item>Glass shards on cycle lane</item>
+        <item>Er ligt vuil op het fietspad (bv. zwerfvuil, modder of veel afgevallen bladeren)</item>
+        <item>Other (please specify)</item>
+    </array>
+
+    <array name="traffic_signs">
+        <item>Road markings for cycle crossing missing / barely visible</item>
+        <item>Traffic signs marking cycle crossing missing / in bad condition</item>
+        <item>Traffic signs marking cycle lane missing / in bad condition</item>
+        <item>Traffic light not functioning</item>
+        <item>Signalization is incorrect / priority situation unclear</item>
+        <item>Other (please specify)</item>
+    </array>
+
+    <array name="hindrance_along_road">
+        <item>A fixed object lying too close to the cycle lane</item>
+        <item>A fixes or loose object lying on the cycle lane</item>
+        <item>Overgrowth on cycle lane causes hindrance</item>
+        <item>Traffic light not functioning</item>
+        <item>Signalization is incorrect / priority situation unclear</item>
+        <item>Het onderlinge zicht tussen fietsers en andere weggebruikers wordt belemmerd</item>
+        <item>Other (please specify)</item>
+    </array>
+
+    <array name="road_works">
+        <item>Insufficient care for cyclists\' safety during road works</item>
+        <item>Road works signalisation insufficient for cyclists</item>
+        <item>Road works insufficiently lighted</item>
+        <item>Repair work was done incorrectly</item>
+        <item>Other (please specify)</item>
+    </array>
+    <!--Report an issue END-->
+
+    <array name="languages">
+        <item>English</item>
+        <item>Nederlands</item>
+    </array>
+    <array name="language_codes">
+        <item>en</item>
+        <item>nl</item>
+    </array>
+</resources>

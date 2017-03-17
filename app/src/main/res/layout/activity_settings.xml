@@ -1,0 +1,274 @@
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tool_bar"
+            android:background="#fff"
+            >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#fff"
+                    >
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="30dp"
+                        android:text="@string/select_bike"
+                        android:textColor="@color/text_primary"
+                        android:textIsSelectable="false"
+                        android:textSize="19dp"/>
+
+                    <GridLayout
+
+                        android:id="@+id/sss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:columnCount="2"
+                        android:paddingTop="60dp">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@+id/city_bike_img"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_columnSpan="1"
+
+                                android:adjustViewBounds="true"
+
+
+                                android:background="@drawable/u9"
+                                android:onClick="onClick"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/u33"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:id="@+id/city_bike_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="7dp"
+                                android:text="@string/city_bike"
+                                android:textColor="#ff000000"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@+id/velo_img"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:adjustViewBounds="true"
+
+                                android:background="@drawable/u11"
+
+
+                                android:onClick="onClick"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/u33"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:id="@+id/velo_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="7dp"
+                                android:text="@string/antwerp_bike"
+                                android:textColor="#ff000000"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@+id/race_bike_img"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+
+                                android:adjustViewBounds="true"
+
+
+                                android:background="@drawable/u13"
+                                android:onClick="onClick"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/u33"/>
+
+                            <TextView
+                                android:id="@+id/race_bike_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="7dp"
+                                android:text="@string/race_bike"
+                                android:textColor="#ff000000"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@+id/mountain_bike_img"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:adjustViewBounds="true"
+
+                                android:background="@drawable/u21"
+
+
+                                android:onClick="onClick"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/u33"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:id="@+id/mountain_bike_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="7dp"
+                                android:text="@string/mountain_bike"
+                                android:textColor="#ff000000"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@+id/electric_bike_img"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:adjustViewBounds="true"
+
+                                android:background="@drawable/u17"
+
+
+                                android:onClick="onClick"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/u33"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:id="@+id/electric_bike_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="7dp"
+                                android:text="@string/electric_bike"
+                                android:textColor="#ff000000"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@+id/carrier_bike_img"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:adjustViewBounds="true"
+
+                                android:background="@drawable/u19"
+
+
+                                android:onClick="onClick"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/u33"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:id="@+id/carrier_bike_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="7dp"
+                                android:text="@string/carrier_bike"
+                                android:textColor="#ff000000"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                    </GridLayout>
+                </FrameLayout>
+            </ScrollView>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/header_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/tool_bar"
+            android:background="@drawable/header_shadow"
+            android:orientation="horizontal"/>
+
+    </RelativeLayout>
+
+
+
+

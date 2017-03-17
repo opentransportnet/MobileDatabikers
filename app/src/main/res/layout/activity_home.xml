@@ -1,0 +1,419 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.opentransportnet.databikers.activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"/>
+
+        <fragment
+            android:id="@+id/route_recorder"
+            android:name="com.library.routerecorder.RouteRecorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tool_bar"/>
+
+        <LinearLayout
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tool_bar"
+            android:clickable="false">
+
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:nestedScrollingEnabled="false">
+
+                        <ImageView
+                            android:id="@+id/route_record_button"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/u7"/>
+
+                        <TextView
+                            android:id="@+id/route_record_button_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical|center|fill_vertical|center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/new_button"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/white"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="50dp">
+
+                        <ImageView
+                            android:id="@+id/report_button"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/u8"/>
+
+                        <TextView
+                            android:id="@+id/report_button_activity_home"
+                            android:layout_width="88dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical|center|fill_vertical|center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/report"
+                            android:textSize="16dp"
+                            android:textColor="@color/white"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <!--  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"
+                android:background="@drawable/greencustom_toast"
+                android:gravity="center"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageView1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+
+                        android:adjustViewBounds="true"
+
+
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/u33"
+                        android:background="@drawable/u13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Regbutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="START"
+                        android:textColor="@color/toast"
+                        android:textSize="20dp"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Registering your bike ride"
+                        android:textColor="@color/toast"
+                        android:textSize="16dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@android:color/darker_gray"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CHANGE BIKE"
+                            android:id="@+id/textView43"
+                            android:textColor="@color/color_primary"
+                            android:gravity="center_horizontal"
+                            android:clickable="true"
+                            android:onClick="changeS"
+                            android:paddingLeft="15dp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="START"
+                            android:id="@+id/textView44"
+                            android:textColor="@color/color_primary"
+                            android:clickable="true"
+                            android:onClick="startNewTrack"
+                            android:gravity="right"
+                            android:paddingRight="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/stop"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/tool_bar"-->
+            <!--android:background="#80000000"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="gone">-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+
+
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="20dp"-->
+
+
+                    <!--android:layout_marginLeft="40dp"-->
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:background="@drawable/greencustom_toast">-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/Regbuttons"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:clickable="false"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView12"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:paddingTop="15dp"-->
+                            <!--android:text="STOP"-->
+                            <!--android:textColor="@color/toast"-->
+                            <!--android:textSize="20dp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="Registering your bike ride"-->
+                            <!--android:textColor="@color/toast"-->
+                            <!--android:textSize="16dp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView29"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:clickable="true"-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:onClick="exit"-->
+                            <!--android:paddingBottom="20dp"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:text="STOP"-->
+                            <!--android:textColor="@color/color_primary"/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="40dp"-->
+
+                    <!--android:layout_marginRight="40dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:background="@drawable/greencustom_toast">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/linearLayout"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:clickable="false"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView10"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:paddingTop="15dp"-->
+                            <!--android:text="REPORT ISSUE"-->
+                            <!--android:textColor="@color/toast"-->
+                            <!--android:textSize="20dp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView11"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="Reporting an issue on \n your cycle trip"-->
+                            <!--android:textColor="@color/toast"-->
+                            <!--android:textSize="16dp"/>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView42"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:clickable="true"-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:onClick="openReport"-->
+                            <!--android:paddingBottom="20dp"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:text="REPORT"-->
+                            <!--android:textColor="@color/color_primary"/>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+
+
+        <RelativeLayout
+            android:id="@+id/header_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/tool_bar"
+            android:background="@drawable/header_shadow"
+            android:orientation="horizontal"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:background="@color/black_translucent" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/color_primary"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/version"
+                android:textColor="#000"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/display_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="[Full name]"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"/>
+
+                <ListView
+                    android:id="@+id/drawerlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:cacheColorHint="@color/text_primary"
+                    android:textColor="@color/text_primary"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

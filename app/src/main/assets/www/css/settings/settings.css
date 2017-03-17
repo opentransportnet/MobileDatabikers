@@ -1,0 +1,289 @@
+/* MAIN CONTENT BLOCK CHANGES */
+
+	/** main item block **/
+	
+	.card, .list-inset {
+		overflow: hidden;
+		margin: 10px 10px 0px;
+		border-radius: 2px;
+		background-color: #fff;
+	}
+
+	/**  row content **/
+	.row {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.row.row-center {
+		margin-top: 0;
+	}
+
+	.col {
+		margin: 0px;
+		padding: 0px;
+		border: none;
+	}
+	
+
+	/** Section header size **/
+	.item-divider {
+		height: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	
+
+	
+	
+
+
+
+
+
+	
+/* PAGE ELEMENTS - COMMON*/	
+
+	
+	/** input field changes **/
+	
+	.input-label {
+		margin: 0px;
+		padding: 0px;
+		border: none;
+	}
+	
+	.item-stacked-label .icon, .item-stacked-label .input-label {
+		display: inline-block;
+		padding: 0 0 4px;
+		vertical-align: middle;
+	}
+	
+	input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], textarea {
+		font-size: 16px;
+		line-height: 22px;
+		height: 40px;
+		padding-right: 10px;
+		padding-left: 10px;
+		-webkit-flex: 0px;
+	}
+	
+	.item-input {
+	  padding: 10px 0 10px 0px;
+	}
+	 	
+	/** common button changes **/
+
+	.button.button-assertive {
+		min-height: 38px;
+		border-radius: 0px;
+		line-height: 1.42857;
+		font-size:16px;	
+		margin: 4px 0;
+		border-radius: 6px;
+	}
+
+	/** footer button changes **/
+
+	footer .submit{
+		width: 100%;
+	}
+	
+	#footer-button {
+		font-size: large !important;
+		line-height: 0px;
+		border-bottom: none;
+		border-left: none;
+		border-right: none;
+		margin: 0;
+		width: 100%;
+		height: 44px;
+	/*** ionic has-footer class makes footer 44px ***/
+	}
+	
+	footer.bar {
+		padding: 0;
+		border-top: none;
+		height: auto;
+	}
+
+ 
+ 
+ 
+  /* PAGE ELEMENTS - SETTINGS */
+  
+  
+  
+  	/** equal space between reports & radius rows **/
+	.reports-and-radius-row .col:first-child,
+	.reports-and-radius-row .col-50:first-child{
+		padding-left: 0;
+		padding-right: 5px;
+	}
+
+	.reports-and-radius-row .col:last-child,
+	.reports-and-radius-row .col-50:last-child{
+		padding-left: 5px;
+		padding-right: 0;
+	}
+ 
+ 
+ 	/** select dropdown menu **/
+	
+	.item-select select {
+		padding: 0 40px 0 15px;
+		height:100%
+	}
+	
+	/** select triangle **/
+	
+	.item-select:after {
+		border-top: 8px solid;
+		border-right: 8px solid transparent;
+		border-left: 8px solid transparent;
+	}
+
+	/** checkbox changes**/
+	
+	.item-checkbox .checkbox {
+		left: 0px;
+	}
+	
+	.checkbox {
+		padding-left: 0px;
+	}
+	
+	.item-checkbox {
+		border: none;
+		padding-left: 36px;
+	}
+	.checkbox input:before, .checkbox-icon:before {
+		border: 1px solid;
+	}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* COMMON COLORS */
+
+	/** Body background **/
+	body,
+	.content,
+	.list {
+		background-color: #ffffff;
+	}
+
+	/** List element text color **/
+	.input-label {
+		color: #444;
+	}
+	
+	.item p {
+		color: #444;
+	}
+
+	/*** Main elements border color ***/
+    .item {
+		background-color: #fff;
+	} 
+	
+	.item-divider {
+		background-color: #387ef5;
+		font-size:40px;
+		color: #fff;
+	}
+	
+	/*** Item divider text & icon color change ***/
+	.item-divider > .input-label {
+		font-size: 18px;
+		color: #fff;
+	}
+	.item-icon-left.item-icon-right .icon:first-child {
+		right: auto;
+		color: #fff;
+	}
+	.item-icon-left .item-delete .icon, .item-icon-left.item-icon-right .icon:last-child {
+		left: auto;
+		color: #fff;
+	}
+	.item .item-content.activated,
+	.item .item-content.active,
+	.item-complex.activated .item-content,
+	.item-complex.active .item-content,
+	.item.activated,.item.active{
+	border-color: transparent;
+	background-color: #387ef5;
+	}
+	
+	
+	
+	/** Select dropdown menu **/
+	.item-select select {
+		border-color: #0c63ee;
+	}
+	
+	.item-select:after {	
+		color: #0c63ee;	
+	}
+	
+	/** hidden for now **/
+	.item-input {
+		border-color: transparent;
+	}
+		
+	/** Input text color **/
+	input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], textarea {
+		color: #444;
+		background-color: #f2f2f2;
+	}
+	
+	
+	/** select drop-down **/
+	option {
+		background: #ffffff;
+	}
+	
+		/*** ASSERTIVE(#ef473a) color override for buttons and checkbox ***/
+		
+		.checkbox-assertive input:checked+.checkbox-icon:before, .checkbox-assertive input:checked:before {
+			background: #0c63ee;
+			border-color: #0c63ee;
+		}
+		
+		.checkbox-assertive .checkbox-icon:before, .checkbox-assertive input:before {
+			border-color: #a7b1bb;
+		}
+		
+		/*** #e42012 original border color ****/
+		.button.button-assertive {
+			border-color: #0c63ee;
+			background-color: #0c63ee;
+			color: #ffffff;
+		}
+
+		
+		
+		.button.button-assertive.activated,
+		.button.button-assertive.active {
+			border-color: #387ef5;
+			background-color: #387ef5;
+		}
+		
+		
+		#footer-button {
+		color: #ffffff;
+		background-color: #33cd5f;
+		border-color: transparent;
+		border-radius: 0px;
+		}
+		
+		#footer-button.activated,
+		#footer-button.active {
+			border-color: #47d26f;
+			background-color: #47d26f;
+		}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="eu.opentransportnet.databikers"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_antwerp"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.LoginActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="localhost"
+                    android:path="/callback"
+                    android:port="3000"
+                    android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.SettingsActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.Report1ProblemsActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="eu.opentransportnet.databikers.activities.MainActivity"/>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.Report2RouteActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="eu.opentransportnet.databikers.activities.Report1ProblemsActivity"/>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.Report3DetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="eu.opentransportnet.databikers.activities.Report2RouteActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.TracksActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.DisclaimerActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.StatsActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.ChangeLangActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="eu.opentransportnet.databikers.activities.ReportInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+    </application>
+</manifest>

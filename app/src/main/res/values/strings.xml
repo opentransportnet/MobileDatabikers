@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Databikers</string>
+
+    <string-array name="drawer_items" color="@color/text_primary" id="dd">
+
+        <item>Public tracks</item>
+        <item>My tracks</item>
+        <item> Change bike type</item>
+        <item> Change language</item>
+        <item> Disclaimer</item>
+        <item> Delete user content</item>
+        <item> Log out</item>
+    </string-array>
+
+    <!--Problem type-->
+    <string name="problem_type">Problem type</string>
+    <string name="select_problem_type">Select problem type</string>
+    <string name="road_condition">Road condition</string>
+    <string name="road_signalisation">Traffic signs / lights</string>
+    <string name="hindrance">Hindrance along road</string>
+    <string name="road_works">Road works</string>
+    <string name="other">Other issue (please clarify by taking a picture)</string>
+
+    <string name="title_route_problem">Route problem</string>
+    <string name="title_route">Route</string>
+    <string name="title_report_details">Report details</string>
+    <string name="title_my_bike">My bike</string>
+    <string name="title_my_track">My track</string>
+    <string name="title_language">Languages</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_tracks">Tracks</string>
+    <string name="title_activity_disclaimer">Disclaimer</string>
+
+    <string name="close">Close</string>
+    <string name="description_required">Description (required)</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="or">Or</string>
+    <string name="login_with">Login with</string>
+    <string name="register">Register</string>
+    <string name="log_in">Login</string>
+    <string name="public_tracks">Public tracks</string>
+    <string name="my_tracks">My tracks</string>
+    <string name="new_button">New</string>
+    <string name="report">Report</string>
+    <string name="save_button">Save</string>
+    <string name="stop_button">Stop</string>
+    <string name="login_error">Login error</string>
+    <string name="network_error">Network error</string>
+    <string name="network_unavailable">Network unavailable</string>
+    <string name="pin_location">Please pin the location in the map</string>
+    <string name="no_description">No description</string>
+    <string name="report_saved">Report saved</string>
+    <string name="report_not_saved">Error! Can not save report</string>
+    <string name="current_language">Current language:</string>
+    <string name="select_bike">Select your bike</string>
+    <string name="city_bike">City bike</string>
+    <string name="antwerp_bike">Vélo (public bike)</string>
+    <string name="race_bike">Race bike</string>
+    <string name="mountain_bike">Mountain bike</string>
+    <string name="electric_bike">Electric bike</string>
+    <string name="carrier_bike">Carrier bike</string>
+    <string name="distance_activity_stats">Distance</string>
+    <string name="timeandspeed_activity_stats">Time and speed</string>
+    <string name="elevation_activity_stats">Elevation</string>
+    <string name="roadquality_activity_stats">Road quality</string>
+    <string name="total_distance_activity_stats">Total distance:</string>
+    <string name="climbing_distance_activity_stats">Climbing distance:</string>
+    <string name="decending_distance_activity_stats">Decending distance:</string>
+    <string name="total_time_activity_stats">Total time:</string>
+    <string name="start_time_activity_stats">Start time:</string>
+    <string name="end_time_activity_stats">End time:</string>
+    <string name="max_speed_activity_stats">Max. speed:</string>
+    <string name="avg_speed_activity_stats">Avg. speed:</string>
+    <string name="min_elevation_activity_stats">Min. elevation:</string>
+    <string name="max_elevation_activity_stats">Max. elevation:</string>
+    <string name="avg_elevation_activity_stats">Avg. elevation:</string>
+    <string name="start_elevation_activity_stats">Start elevation:</string>
+    <string name="end_elevation_activity_stats">End elevation:</string>
+    <string name="addname_activity_stats">Add name</string>
+    <string name="elevationprofile_activity_stats">Elevation profile</string>
+    <string name="elevationm_activity_stats">Elevation [m]</string>
+    <string name="distancekm_activity_stats">Distance [km]</string>
+    <string name="poor_activity_stats">Poor</string>
+    <string name="average_activity_stats">Average</string>
+    <string name="good_activity_stats">Good</string>
+    <string name="error_activity_stats"> Connection issue!</string>
+    <string name="saved_activity_stats">Track has been saved!</string>
+    <string name="edit_activity_stats">Track has been edited!</string>
+    <string name="delete_activity_stats">Tracks has been deleted!</string>
+    <string name="delete1_activity_stats">Got wrong values from server!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel_activity_stats">Cancel</string>
+    <string name="warning_activity_stats">Warning!</string>
+    <string name="warning_text_activity_stats">Are you sure?</string>
+    <string name="warning_changed">Some changes have not been saved.\nAre you sure you want to exit?</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_local_files">Delete all local tracks and reports?</string>
+    <string name="delete_local_files_message">You have some files that have not been uploaded to
+        server. Are you sure you want to delete all local tracks and reports?</string>
+    <string name="google_api_unavailable">Google API Unavailable</string>
+    <string name="track_cloud">The track is not yet saved in the cloud</string>
+    <string name="agree">Agree</string>
+    <string name="scroll_down">Scroll\ndown</string>
+    <string name="delete_user">User content deleted!</string>
+    <string name="delete_user_title">Delete all user content?</string>
+    <string name="delete_user_content">Do you wish to delete all content regarding you?</string>
+    <string name="stats_public_track">Public track</string>
+    <string name="issue_deleted">Issue deleted</string>
+    <string name="issue_delete_only_owner">This issue can only be deleted by its owner</string>
+
+</resources>

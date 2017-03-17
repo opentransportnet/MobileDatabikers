@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Databikers</string>
+
+    <string-array name="drawer_items" id="dd" color="@color/text_primary">
+        <item>Publieke routes</item>
+        <item>Mijn routes</item>
+        <item> Wijzig type fiets</item>
+        <item> Wijzig taal</item>
+        <item> Disclaimer</item>
+        <item> Delete user content</item>
+        <item> Log uit</item>
+    </string-array>
+
+    <!--Problem type-->
+    <string name="problem_type">Meld probleem</string>
+    <string name="select_problem_type">Wat is het probleem?</string>
+    <string name="road_condition">Staat van het wegdek</string>
+    <string name="road_signalisation">Verkeerssignalisatie</string>
+    <string name="hindrance">Hinder</string>
+    <string name="road_works">Wegwerkzaamheden</string>
+    <string name="other">Andere situatie (Gelieve te verduidelijken door in de volgende stap een foto te nemen)</string>
+
+    <string name="title_route_problem">Meld probleem</string>
+    <string name="title_route">Route</string>
+    <string name="title_report_details">Details probleem</string>
+    <string name="title_my_bike">Mijn fiets</string>
+    <string name="title_my_track">Mijn route</string>
+    <string name="title_language">Taal</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_tracks">Mijn routes</string>
+    <string name="title_activity_disclaimer">Disclaimer</string>
+
+    <string name="close">Sluit af</string>
+    <string name="description_required">Beschrijving</string>
+    <string name="username">Gebruikersnaam</string>
+    <string name="password">Wachtwoord</string>
+    <string name="remember_me">Blijf aangemeld</string>
+    <string name="or">Of</string>
+    <string name="login_with">Log in met</string>
+    <string name="register">Registreer</string>
+    <string name="log_in">Log in</string>
+    <string name="public_tracks">Publieke routes</string>
+    <string name="my_tracks">Mijn routes</string>
+    <string name="new_button">Nieuw</string>
+    <string name="report">Meld probleem</string>
+    <string name="save_button">Bewaar</string>
+    <string name="stop_button">Stop</string>
+    <string name="login_error">Inlogprobleem</string>
+    <string name="network_error">Netwerkprobleem</string>
+    <string name="network_unavailable">Netwerk onbeschikbaar</string>
+    <string name="pin_location">Pin de locatie aan op de kaart</string>
+    <string name="no_description">Geen beschrijving</string>
+    <string name="report_saved">Melding opgeslagen</string>
+    <string name="report_not_saved">Fout! Kan melding niet opslaan</string>
+    <string name="current_language">Huidige taal:</string>
+    <string name="select_bike">Kies je fiets</string>
+    <string name="city_bike">Stadsfiets</string>
+    <string name="antwerp_bike">Vélo Antwerpen</string>
+    <string name="race_bike">Koersfiets</string>
+    <string name="mountain_bike">Mountainbike</string>
+    <string name="electric_bike">Elektrische fiets</string>
+    <string name="carrier_bike">Bakfiets</string>
+    <string name="distance_activity_stats">Afstand</string>
+    <string name="timeandspeed_activity_stats">Tijd en snelheid</string>
+    <string name="elevation_activity_stats">Hoogte</string>
+    <string name="roadquality_activity_stats">Kwaliteit van de weg</string>
+    <string name="total_distance_activity_stats">Totale afstand:</string>
+    <string name="climbing_distance_activity_stats">Klimmen:</string>
+    <string name="decending_distance_activity_stats">Dalen:</string>
+    <string name="total_time_activity_stats">Totale duur:</string>
+    <string name="start_time_activity_stats">Start:</string>
+    <string name="end_time_activity_stats">Einde:</string>
+    <string name="max_speed_activity_stats">Max. snelheid:</string>
+    <string name="avg_speed_activity_stats">Gemiddelde snelheid:</string>
+    <string name="min_elevation_activity_stats">Min. hoogte:</string>
+    <string name="max_elevation_activity_stats">Max. hoogte:</string>
+    <string name="avg_elevation_activity_stats">Gemiddelde hoogte:</string>
+    <string name="start_elevation_activity_stats">Hoogte startpunt:</string>
+    <string name="end_elevation_activity_stats">Hoogte eindpunt:</string>
+    <string name="addname_activity_stats">Naam route</string>
+    <string name="elevationprofile_activity_stats">Hoogteprofiel</string>
+    <string name="elevationm_activity_stats">Hoogte (m)</string>
+    <string name="distancekm_activity_stats">Afstand (km)</string>
+    <string name="poor_activity_stats">Slecht</string>
+    <string name="average_activity_stats">Middelmatig</string>
+    <string name="good_activity_stats">Goed</string>
+    <string name="error_activity_stats">Verbindingsprobleem</string>
+    <string name="saved_activity_stats">Route opgeslagen</string>
+    <string name="edit_activity_stats">Route gewijzigd</string>
+    <string name="delete_activity_stats">Route verwijderd</string>
+    <string name="delete1_activity_stats">Probeer later opnieuw</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
+    <string name="cancel_activity_stats">Annuleer</string>
+    <string name="warning_activity_stats">Opgelet!</string>
+    <string name="warning_text_activity_stats">Bent u zeker?</string>
+    <string name="warning_changed">Sommige wijzigingen zijn niet opgeslagen. Bent u zeker dat u wilt afsluiten?</string>
+    <string name="something_went_wrong">Er liep iets mis</string>
+    <string name="log_out">Log uit</string>
+    <string name="delete_local_files">Verwijder uw lokaal opgeslagen routes en meldingen?</string>
+    <string name="delete_local_files_message">Sommige van uw bestanden zijn nog niet opgeslagen op de server. Bent u zeker dat u al uw lokaal opgeslagen routes en meldingen wilt verwijderen?</string>
+    <string name="google_api_unavailable">Google Play services is niet beschikbaar</string>
+    <string name="track_cloud">De route is nog niet opgeslagen in de cloud</string>
+    <string name="agree">Akkoord</string>
+    <string name="scroll_down">Scroll\nomlaag</string>
+    <string name="delete_user">Uw gebruikersgegevens zijn verwijderd!</string>
+    <string name="delete_user_title">Al uw gebruikersgegegevens verwijderen?</string>
+    <string name="delete_user_content">Wilt u alle ggevens die op u van toepassing zijn verwijderen?</string>
+    <string name="stats_public_track">Publieke route</string>
+    <string name="issue_deleted">Issue deleted</string>
+    <string name="issue_delete_only_owner">This issue can only be deleted by its owner</string>
+</resources>
